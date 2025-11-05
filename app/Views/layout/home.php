@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 40px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
         }
 
         .header .logo img {
@@ -76,7 +77,7 @@
             line-height: 0.9;
             letter-spacing: 5px;
             color: transparent;
-            -webkit-text-stroke: 2px rgba(0,0,0,0.3);
+            -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3);
             opacity: 0.4;
             text-align: center;
             z-index: 1;
@@ -89,7 +90,7 @@
             top: 120px;
             color: #fff;
             z-index: 3;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .banner .text h2 {
@@ -135,7 +136,7 @@
             margin: -30px auto 40px;
             width: 80%;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
         .menu-box button {
@@ -166,17 +167,19 @@
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
 
         .partners .logos div {
             width: 180px;
             height: 120px;
-            background: #f1f1f1;
+            background: #ffffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 8px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
             overflow: hidden;
         }
 
@@ -222,9 +225,9 @@
         .footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -233,7 +236,7 @@
         <div class="right">
             <button class="btn-login" onclick="window.location.href='<?= base_url('login'); ?>'">Login/Register</button>
             <div class="help">
-                <img src="<?= base_url('loginimg/customercare.png'); ?>"  alt="Ikon Bantuan" width="18">
+                <img src="<?= base_url('loginimg/customercare.png'); ?>" alt="Ikon Bantuan" width="18">
                 <span>Bantuan</span>
             </div>
         </div>
@@ -244,9 +247,9 @@
             <h1>Servis Cepat, Performa Hebat</h1>
             <p>Rawat Kendaraan Tanpa Ribet, Pesan Layanan Bengkel dari Rumah.</p>
         </div>
-        <img src="<?= base_url('loginimg/banner.png'); ?>" alt="Gambar banner"  class="banner-img">
+        <img src="<?= base_url('loginimg/banner.png'); ?>" alt="Gambar banner" class="banner-img">
     </section>
-<br><br><br>
+    <br><br><br>
     <div class="menu-box">
         <button onclick="window.location.href='<?= base_url('bengkel/menu'); ?>'">Menu</button>
         <button>Menu</button>
@@ -258,9 +261,9 @@
         <h2>Partners</h2>
         <div class="logos">
             <div><img src="<?= base_url('loginimg/logomitsubishi.png'); ?>"></div>
-            <div>Logo partner</div>
-            <div>Logo partner</div>
-            <div>Logo partner</div>
+            <div><img src="<?= base_url('loginimg/logotoyota.png'); ?>"></div>
+            <div><img src="<?= base_url('loginimg/logohonda.png'); ?>"></div>
+            <div><img src="<?= base_url('loginimg/logomitsubishi.png'); ?>"></div>
         </div>
     </section>
 
@@ -270,7 +273,7 @@
             <strong>Head Office</strong><br>
             Kenapa kita harus berbeda dimensi? padahal aku sayang banget sama kamu 💔<br>
             Jl. Dr. Soetomo No.1, Sidakaya, Kecamatan Cilacap Selatan<br>
-                Kabupaten Cilacap, Jawa Tengah 53212
+            Kabupaten Cilacap, Jawa Tengah 53212
         </div>
         <div class="right">
             <br><br><br>
@@ -282,4 +285,5 @@
     </footer>
 
 </body>
+
 </html>
