@@ -537,17 +537,17 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.88.2",
-            "version_normalized": "3.88.2.0",
+            "version": "v3.89.1",
+            "version_normalized": "3.89.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "a8d15584bafb0f0d9d938827840060fd4a3ebc99"
+                "reference": "f34967da2866ace090a2b447de1f357356474573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/a8d15584bafb0f0d9d938827840060fd4a3ebc99",
-                "reference": "a8d15584bafb0f0d9d938827840060fd4a3ebc99",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/f34967da2866ace090a2b447de1f357356474573",
+                "reference": "f34967da2866ace090a2b447de1f357356474573",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,6 @@
                 "php": "^7.4 || ^8.0",
                 "react/child-process": "^0.6.6",
                 "react/event-loop": "^1.5",
-                "react/promise": "^3.3",
                 "react/socket": "^1.16",
                 "react/stream": "^1.4",
                 "sebastian/diff": "^4.0.6 || ^5.1.1 || ^6.0.2 || ^7.0",
@@ -595,7 +594,7 @@
                 "ext-dom": "For handling output formats in XML",
                 "ext-mbstring": "For handling non-UTF8 characters."
             },
-            "time": "2025-09-27T00:24:15+00:00",
+            "time": "2025-10-24T12:05:10+00:00",
             "bin": [
                 "php-cs-fixer"
             ],
@@ -632,7 +631,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.88.2"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.89.1"
             },
             "funding": [
                 {
@@ -710,35 +709,35 @@
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.17.0",
-            "version_normalized": "2.17.0.0",
+            "version": "2.18.0",
+            "version_normalized": "2.18.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "df1ef9503299a8e3920079a16263b578eaf7c3ba"
+                "reference": "06f211dfffff18d91844c1f55250d5d13c007e18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/df1ef9503299a8e3920079a16263b578eaf7c3ba",
-                "reference": "df1ef9503299a8e3920079a16263b578eaf7c3ba",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/06f211dfffff18d91844c1f55250d5d13c007e18",
+                "reference": "06f211dfffff18d91844c1f55250d5d13c007e18",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "conflict": {
                 "zendframework/zend-escaper": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.29.8",
-                "laminas/laminas-coding-standard": "~3.0.1",
-                "phpunit/phpunit": "^10.5.45",
-                "psalm/plugin-phpunit": "^0.19.2",
-                "vimeo/psalm": "^6.6.2"
+                "infection/infection": "^0.31.0",
+                "laminas/laminas-coding-standard": "~3.1.0",
+                "phpunit/phpunit": "^11.5.42",
+                "psalm/plugin-phpunit": "^0.19.5",
+                "vimeo/psalm": "^6.13.1"
             },
-            "time": "2025-05-06T19:29:36+00:00",
+            "time": "2025-10-14T18:31:13+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -891,6 +890,83 @@
             "install-path": "../myclabs/deep-copy"
         },
         {
+            "name": "myth/auth",
+            "version": "v1.2.1",
+            "version_normalized": "1.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lonnieezell/myth-auth.git",
+                "reference": "7d0347faa47bd754d2dc49593a9852800be73986"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lonnieezell/myth-auth/zipball/7d0347faa47bd754d2dc49593a9852800be73986",
+                "reference": "7d0347faa47bd754d2dc49593a9852800be73986",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "provide": {
+                "codeigniter4/authentication-implementation": "1.0"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4-standard": "^1.0",
+                "codeigniter4/devkit": "^1.0",
+                "codeigniter4/framework": "^4.1",
+                "mockery/mockery": "^1.0"
+            },
+            "time": "2022-07-13T18:35:46+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Myth\\Auth\\": "src"
+                },
+                "exclude-from-classmap": [
+                    "**/Database/Migrations/**"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lonnie Ezell",
+                    "email": "lonnieje@gmail.com",
+                    "homepage": "http://newmythmedia.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Flexible authentication/authorization system for CodeIgniter 4.",
+            "homepage": "https://github.com/lonnieezell/myth-auth",
+            "keywords": [
+                "Authentication",
+                "authorization",
+                "codeigniter"
+            ],
+            "support": {
+                "issues": "https://github.com/lonnieezell/myth-auth/issues",
+                "source": "https://github.com/lonnieezell/myth-auth/tree/v1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lonnieezell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/mgatner",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lonnieezell",
+                    "type": "patreon"
+                }
+            ],
+            "install-path": "../myth/auth"
+        },
+        {
             "name": "nexusphp/cs-config",
             "version": "v3.26.4",
             "version_normalized": "3.26.4.0",
@@ -949,17 +1025,17 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.6.1",
-            "version_normalized": "5.6.1.0",
+            "version": "v5.6.2",
+            "version_normalized": "5.6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2"
+                "reference": "3a454ca033b9e06b63282ce19562e892747449bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
-                "reference": "f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/3a454ca033b9e06b63282ce19562e892747449bb",
+                "reference": "3a454ca033b9e06b63282ce19562e892747449bb",
                 "shasum": ""
             },
             "require": {
@@ -972,7 +1048,7 @@
                 "ircmaxell/php-yacc": "^0.0.7",
                 "phpunit/phpunit": "^9.0"
             },
-            "time": "2025-08-13T20:13:15+00:00",
+            "time": "2025-10-21T19:32:17+00:00",
             "bin": [
                 "bin/php-parse"
             ],
@@ -1004,7 +1080,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.2"
             },
             "install-path": "../nikic/php-parser"
         },
@@ -1484,17 +1560,17 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.42",
-            "version_normalized": "11.5.42.0",
+            "version": "11.5.43",
+            "version_normalized": "11.5.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c"
+                "reference": "c6b89b6cf4324a8b4cb86e1f5dfdd6c9e0371924"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c",
-                "reference": "1c6cb5dfe412af3d0dfd414cfd110e3b9cfdbc3c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c6b89b6cf4324a8b4cb86e1f5dfdd6c9e0371924",
+                "reference": "c6b89b6cf4324a8b4cb86e1f5dfdd6c9e0371924",
                 "shasum": ""
             },
             "require": {
@@ -1528,7 +1604,7 @@
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
             },
-            "time": "2025-09-28T12:09:13+00:00",
+            "time": "2025-10-30T08:39:39+00:00",
             "bin": [
                 "phpunit"
             ],
@@ -1568,7 +1644,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.42"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.43"
             },
             "funding": [
                 {
@@ -3513,17 +3589,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.3.4",
-            "version_normalized": "7.3.4.0",
+            "version": "v7.3.5",
+            "version_normalized": "7.3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "2b9c5fafbac0399a20a2e82429e2bd735dcfb7db"
+                "reference": "cdb80fa5869653c83cfe1a9084a673b6daf57ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/2b9c5fafbac0399a20a2e82429e2bd735dcfb7db",
-                "reference": "2b9c5fafbac0399a20a2e82429e2bd735dcfb7db",
+                "url": "https://api.github.com/repos/symfony/console/zipball/cdb80fa5869653c83cfe1a9084a673b6daf57ea7",
+                "reference": "cdb80fa5869653c83cfe1a9084a673b6daf57ea7",
                 "shasum": ""
             },
             "require": {
@@ -3556,7 +3632,7 @@
                 "symfony/stopwatch": "^6.4|^7.0",
                 "symfony/var-dumper": "^6.4|^7.0"
             },
-            "time": "2025-09-22T15:31:00+00:00",
+            "time": "2025-10-14T15:46:26+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3590,7 +3666,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.3.4"
+                "source": "https://github.com/symfony/console/tree/v7.3.5"
             },
             "funding": [
                 {
@@ -3923,17 +3999,17 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v7.3.2",
-            "version_normalized": "7.3.2.0",
+            "version": "v7.3.5",
+            "version_normalized": "7.3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe"
+                "reference": "9f696d2f1e340484b4683f7853b273abff94421f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2a6614966ba1074fa93dae0bc804227422df4dfe",
-                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/9f696d2f1e340484b4683f7853b273abff94421f",
+                "reference": "9f696d2f1e340484b4683f7853b273abff94421f",
                 "shasum": ""
             },
             "require": {
@@ -3942,7 +4018,7 @@
             "require-dev": {
                 "symfony/filesystem": "^6.4|^7.0"
             },
-            "time": "2025-07-15T13:41:35+00:00",
+            "time": "2025-10-15T18:45:57+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -3970,7 +4046,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v7.3.2"
+                "source": "https://github.com/symfony/finder/tree/v7.3.5"
             },
             "funding": [
                 {

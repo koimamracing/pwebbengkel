@@ -22,7 +22,7 @@
             max-width: 400px;
         }
         .box img {
-            width: 30px;
+            width: 160px;
             margin-bottom: 15px;
         }
         .box h2 {

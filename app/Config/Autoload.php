@@ -39,6 +39,10 @@ class Autoload extends AutoloadConfig
      */
     public $psr4 = [
         APP_NAMESPACE => APPPATH,
+        'App' => APPPATH,
+        //'Config' => APPPATH,
+        //"Myth\Auth" => APPPATH . 'vendor/myth/auth/src,
+        'Myth\Auth'   => ROOTPATH . 'vendor/myth/auth/src',
     ];
 
     /**

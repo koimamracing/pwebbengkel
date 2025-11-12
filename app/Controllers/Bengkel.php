@@ -16,25 +16,34 @@ class Bengkel extends BaseController
     }
 
     public function registerin()
-    {
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+{
+    $email = $this->request->getPost('email');
+    $password = $this->request->getPost('password');
 
-        $userModel = new BengkelModel();
+    $users = new \Myth\Auth\Models\UserModel();
 
-        $existing = $userModel->where('email_client', $email)->first();
-
-        if ($existing) {
-            return redirect()->back()->with('error', 'Email sudah digunakan!');
-        }
-
-        $userModel->insert([
-            'email_client' => $email,
-            'password_client' => $password 
-        ]);
-        return redirect()->to(base_url('bengkel/berhasilregister'))
-                         ->with('success', 'Registrasi berhasil! Silakan login.');
+    $existing = $users->where('email', $email)->first();
+    if ($existing) {
+        return redirect()->back()->with('error', 'Email sudah digunakan!');
     }
+
+    $userData = [
+        'email'         => $email,
+        'username'      => explode('@', $email)[0],
+        'password_hash' => \Myth\Auth\Password::hash($password),
+        'active'        => 0, 
+    ];
+
+    $users->save($userData);
+
+    $user = $users->where('email', $email)->first();
+    $activator = service('activator');
+    $activator->send($user);
+
+    return redirect()->to(base_url('activate-account'))
+                     ->with('message', 'Akun berhasil dibuat! Silakan periksa email untuk aktivasi.');
+}
+
 
     public function berhasilregister()
     {

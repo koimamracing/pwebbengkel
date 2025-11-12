@@ -87,7 +87,7 @@
         .banner .text {
             position: absolute;
             left: 8%;
-            top: 120px;
+            top: 70px;
             color: #fff;
             z-index: 3;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -120,7 +120,7 @@
             height: auto;
             position: absolute;
             right: 10%;
-            bottom: 0;
+            bottom: 20%;
             z-index: 2;
             pointer-events: none;
         }
@@ -134,9 +134,13 @@
             gap: 20px;
             padding: 20px 0;
             margin: -30px auto 40px;
+            margin-top: -120px;
             width: 80%;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 10;
+            height: 100px;
         }
 
         .menu-box button {
@@ -234,7 +238,7 @@
             <img src="<?= base_url('loginimg/bengkelkita.png'); ?>" alt="Logo Bengkel Kita">
         </div>
         <div class="right">
-            <button class="btn-login" onclick="window.location.href='<?= base_url('login'); ?>'">Login/Register</button>
+            <button class="btn-login" onclick="window.location.href='<?= base_url(route_to('login')); ?>'">Login/Register</button>
             <div class="help">
                 <img src="<?= base_url('loginimg/customercare.png'); ?>" alt="Ikon Bantuan" width="18">
                 <span>Bantuan</span>

@@ -38,6 +38,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpCsFixer\\' => array($vendorDir . '/friendsofphp/php-cs-fixer/src'),
     'Nexus\\CsConfig\\' => array($vendorDir . '/nexusphp/cs-config/src'),
+    'Myth\\Auth\\' => array($vendorDir . '/myth/auth/src', $vendorDir . '/myth/auth/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
     'Fidry\\CpuCoreCounter\\' => array($vendorDir . '/fidry/cpu-core-counter/src'),
@@ -50,4 +51,5 @@ return array(
     'CodeIgniter\\CodingStandard\\' => array($vendorDir . '/codeigniter/coding-standard/src'),
     'CodeIgniter\\' => array($baseDir . '/system'),
     'Clue\\React\\NDJson\\' => array($vendorDir . '/clue/ndjson-react/src'),
+    'App\\' => array($baseDir . '/app'),
 );

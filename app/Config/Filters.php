@@ -34,6 +34,7 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'login'   => \Myth\Auth\Filters\LoginFilter::class
     ];
 
     /**
@@ -51,6 +52,7 @@ class Filters extends BaseFilters
      */
     public array $required = [
         'before' => [
+            'honeypot',
             'forcehttps', // Force Global Secure Requests
             'pagecache',  // Web Page Caching
         ],
@@ -106,5 +108,7 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+         'login' => ['before' => ['dashboard/*', 'user/*', 'admin/*']],
+    ];
 }
